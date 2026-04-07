@@ -66,23 +66,11 @@ export default function Inventory() {
   }
 
   function startEdit(item) {
-    setForm({
-      amount: item.amount || "",
-      brand: item.brand || "",
-      name: item.name || "",
-      fiber_content: item.fiber_content || "",
-      yardage: item.yardage || "",
-      care_instructions: item.care_instructions || "",
-      weight: item.weight || "",
-      colorway: item.colorway || "",
-      dye_lot: item.dye_lot || "",
-      recommended_needle: item.recommended_needle || "",
-      recommended_hook: item.recommended_hook || "",
-      knit_gauge_swatch: item.knit_gauge_swatch || "",
-      crochet_gauge_swatch: item.crochet_gauge_swatch || "",
-      link: item.link || "",
-      discontinued: item.discontinued || false,
-    });
+    setForm(
+      Object.fromEntries(
+        Object.keys(EMPTY_FORM).map((k) => [k, item[k] ?? EMPTY_FORM[k]]),
+      ),
+    );
     setEditId(item.id);
     setShowForm(true);
   }
@@ -186,7 +174,6 @@ export default function Inventory() {
                 required
               />
             </div>
-
             <div>
               <label>
                 Fiber Content <span className="required">*</span>
@@ -213,7 +200,7 @@ export default function Inventory() {
             </div>
 
             {/* Begin optional fields */}
-            <div>
+            <div className="full-width">
               <label>Care Instructions</label>
               <textarea
                 name="care_instructions"
@@ -269,7 +256,7 @@ export default function Inventory() {
                 placeholder="e.g. 13S/16R"
               />
             </div>
-            <div>
+            <div className="full-width">
               <label>Link</label>
               <input
                 name="link"
@@ -312,38 +299,28 @@ export default function Inventory() {
         </form>
       )}
 
-      {items.length === 0 && !showForm && (
-        <p style={{ color: "#999", marginTop: "2rem", textAlign: "center" }}>
-          No yarn in your stash yet. Add some to get started!
-        </p>
-      )}
-
-      {items.map((item) => (
-        <div key={item.id} className="card yarn-card">
-          <div className="yarn-card-info">
-            <h3>
-              {item.brand} {item.name} — {item.colorway}
-            </h3>
-            <p>
-              {item.weight && <span className="tag">{item.weight}</span>}
-              {item.amount && <span>Amount: {item.amount}</span>}
-              {item.yardage ? ` · ${item.yardage}` : ""}
-              {item.fiber_content && ` · ${item.fiber_content}`}
-            </p>
+      {!showForm &&
+        items.map((item) => (
+          <div key={item.id} className="card yarn-card">
+            <div className="yarn-card-info">
+              <h3>
+                {item.brand} {item.name} — {item.colorway} ({item.amount})
+              </h3>
+              <p>{item.yardage}</p>
+            </div>
+            <div className="yarn-card-actions">
+              <button className="btn-secondary" onClick={() => startEdit(item)}>
+                Edit
+              </button>
+              <button
+                className="btn-danger"
+                onClick={() => handleDelete(item.id)}
+              >
+                Delete
+              </button>
+            </div>
           </div>
-          <div className="yarn-card-actions">
-            <button className="btn-secondary" onClick={() => startEdit(item)}>
-              Edit
-            </button>
-            <button
-              className="btn-danger"
-              onClick={() => handleDelete(item.id)}
-            >
-              Delete
-            </button>
-          </div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 }
