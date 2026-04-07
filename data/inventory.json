@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "1a15ad2becba",
+    "amount": 6.0,
+    "brand": "Lion Brand",
+    "name": "Re-Make",
+    "fiber_content": "100% recycled polyester",
+    "yardage": "217yds/100g",
+    "care_instructions": "",
+    "weight": "Medium (4)",
+    "colorway": "Amber",
+    "dye_lot": "24044703",
+    "recommended_needle": "8 (5mm)",
+    "recommended_hook": "H-8 (5mm)",
+    "knit_gauge_swatch": "18S/26R",
+    "crochet_gauge_swatch": "13S/16R",
+    "link": "https://www.lionbrand.com/products/re-make-yarn?variant=42778364837981",
+    "discontinued": false
+  }
+]
