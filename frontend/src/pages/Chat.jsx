@@ -21,10 +21,6 @@ export default function Chat() {
     setInput("");
     setLoading(true);
 
-    // Add a placeholder assistant message that we'll stream into
-    const assistantMsg = { role: "assistant", content: "" };
-    setMessages([...newMessages, assistantMsg]);
-
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
@@ -52,22 +48,27 @@ export default function Chat() {
           if (!line.startsWith("data: ") || line === "data: [DONE]") continue;
           const payload = JSON.parse(line.slice(6));
           accumulated += payload.token;
-          setMessages([
-            ...newMessages,
-            { role: "assistant", content: accumulated },
-          ]);
+          const content = accumulated;
+          setMessages((prev) => {
+            const last = prev[prev.length - 1];
+            if (last?.role === "assistant") {
+              return [...prev.slice(0, -1), { ...last, content }];
+            }
+            return [...prev, { role: "assistant", content }];
+          });
         }
       }
     } catch {
       setMessages((prev) => {
         const last = prev[prev.length - 1];
-        if (last?.role === "assistant" && !last.content) {
-          return [
-            ...prev.slice(0, -1),
-            { role: "assistant", content: "Sorry, something went wrong." },
-          ];
-        }
-        return prev;
+        // If we already streamed some content, keep the partial response
+        if (last?.role === "assistant" && last.content) return prev;
+        // Otherwise replace the empty bubble (or append) with an error
+        const base = last?.role === "assistant" ? prev.slice(0, -1) : prev;
+        return [
+          ...base,
+          { role: "assistant", content: "Sorry, something went wrong." },
+        ];
       });
     } finally {
       setLoading(false);
@@ -116,6 +117,11 @@ export default function Chat() {
               )}
             </div>
           ))}
+          {loading && messages[messages.length - 1]?.role !== "assistant" && (
+            <div className="chat-bubble assistant" style={{ opacity: 0.6 }}>
+              Thinking...
+            </div>
+          )}
           <div ref={bottomRef} />
         </div>
         <div className="chat-input-row">
