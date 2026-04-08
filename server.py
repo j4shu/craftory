@@ -27,6 +27,12 @@ CONVERSATIONS_DIR = Path(__file__).parent / "conversations"
 FRONTEND_DIR = Path(__file__).parent / "frontend" / "dist"
 
 # ---------------------------------------------------------------------------
+# Shared clients
+# ---------------------------------------------------------------------------
+
+claude_client = anthropic.Anthropic()  # reuse across requests
+
+# ---------------------------------------------------------------------------
 # Pydantic models
 # ---------------------------------------------------------------------------
 
@@ -176,7 +182,7 @@ def _build_system_prompt(inventory: list[dict]) -> str:
             if item.get("crochet_gauge_swatch"):
                 parts.append(f"  Crochet gauge: {item['crochet_gauge_swatch']}")
             if item.get("discontinued"):
-                parts.append("  **DISCONTINUED**")
+                parts.append("  Note: This yarn has been discontinued.")
             lines.append("\n".join(parts))
         inventory_text = "\n\n".join(lines)
 
@@ -200,14 +206,13 @@ already have.
 
 @app.post("/api/chat")
 def chat(req: ChatRequest):
-    client = anthropic.Anthropic()
     inventory = read_inventory()
     system = _build_system_prompt(inventory)
 
     messages = req.history + [{"role": "user", "content": req.message}]
 
     def generate():
-        with client.messages.stream(
+        with claude_client.messages.stream(
             model="claude-opus-4-6",
             max_tokens=16384,
             system=system,
