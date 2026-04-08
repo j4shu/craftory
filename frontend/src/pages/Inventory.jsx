@@ -25,11 +25,11 @@ const FIELDS = [
   { name: "colorway", label: "Colorway", required: true, placeholder: "e.g. Amber" },
   { name: "fiber_content", label: "Fiber Content", required: true, placeholder: "e.g. 100% recycled polyester" },
   { name: "yardage", label: "Yardage (yds/g)", required: true, placeholder: "e.g. 217yds/100g" },
+  { name: "recommended_needle", label: "Recommended Needle",required: true, placeholder: "e.g. 8 (5mm)" },
+  { name: "recommended_hook", label: "Recommended Hook", required: true, placeholder: "e.g. H-8 (5mm)" },
   // Optional fields
   { name: "care_instructions", label: "Care Instructions", element: "textarea", fullWidth: true, props: { rows: 4, style: { resize: "none" } } },
   { name: "dye_lot", label: "Dye Lot #" },
-  { name: "recommended_needle", label: "Recommended Needle", placeholder: "e.g. 8 (5mm)" },
-  { name: "recommended_hook", label: "Recommended Hook", placeholder: "e.g. H-8 (5mm)" },
   { name: "knit_gauge_swatch", label: "Knit Gauge Swatch", placeholder: "e.g. 18S/26R" },
   { name: "crochet_gauge_swatch", label: "Crochet Gauge Swatch", placeholder: "e.g. 13S/16R" },
   { name: "discontinued", label: "Discontinued?", element: "select", options: ["No", "Yes"] },
@@ -197,9 +197,11 @@ export default function Inventory() {
           <div key={item.id} className="card yarn-card">
             <div className="yarn-card-info">
               <h3>
-                {item.brand} {item.name} — {item.colorway} ({item.amount})
+                {item.brand} {item.name} - {item.colorway}
               </h3>
-              <p>{item.yardage}</p>
+              <p>
+                {item.amount} skeins - {item.yardage}
+              </p>
             </div>
             <div className="yarn-card-actions">
               <button className="btn-secondary" onClick={() => startEdit(item)}>
