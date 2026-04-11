@@ -47,6 +47,8 @@ export default function Inventory() {
   const [form, setForm] = useState(EMPTY_FORM);
   const [editId, setEditId] = useState(null);
   const [showForm, setShowForm] = useState(false);
+  const [imgVersion, setImgVersion] = useState(0);
+  const [pendingImage, setPendingImage] = useState(null); // File object waiting for submit
 
   useEffect(() => {
     fetchItems();
@@ -70,6 +72,7 @@ export default function Inventory() {
       discontinued: form.discontinued === "Yes",
     };
 
+    let targetId = editId;
     if (editId) {
       await fetch(`/api/inventory/${editId}`, {
         method: "PATCH",
@@ -77,13 +80,26 @@ export default function Inventory() {
         body: JSON.stringify(payload),
       });
     } else {
-      await fetch("/api/inventory", {
+      const res = await fetch("/api/inventory", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
+      const created = await res.json();
+      targetId = created.id;
     }
 
+    if (pendingImage && targetId) {
+      const formData = new FormData();
+      formData.append("file", pendingImage);
+      await fetch(`/api/inventory/${targetId}/image`, {
+        method: "POST",
+        body: formData,
+      });
+      setImgVersion((v) => v + 1);
+    }
+
+    setPendingImage(null);
     setForm(EMPTY_FORM);
     setEditId(null);
     setShowForm(false);
@@ -105,6 +121,11 @@ export default function Inventory() {
     setShowForm(true);
   }
 
+  function handleImageSelect(e) {
+    const file = e.target.files[0];
+    if (file) setPendingImage(file);
+  }
+
   async function handleDelete(id) {
     if (!confirm("Delete this yarn?")) return;
     await fetch(`/api/inventory/${id}`, { method: "DELETE" });
@@ -112,6 +133,7 @@ export default function Inventory() {
   }
 
   function cancelForm() {
+    setPendingImage(null);
     setForm(EMPTY_FORM);
     setEditId(null);
     setShowForm(false);
@@ -153,10 +175,6 @@ export default function Inventory() {
                     {f.label}
                     {f.required && <span className="required"> *</span>}
                   </label>
-                  {/* name ties this input to form state via handleChange.
-                      value/onChange make it a controlled component.
-                      {...f.props} passes through field-specific attrs like
-                      { min: "0", step: "0.5" } for the amount field. */}
                   <Tag
                     name={f.name}
                     type={f.type}
@@ -176,6 +194,36 @@ export default function Inventory() {
               );
             })}
           </div>
+
+          {/* image upload and preview */}
+          {(() => {
+            const savedImage =
+              editId && items.find((i) => i.id === editId)?.image;
+            const previewSrc = pendingImage
+              ? URL.createObjectURL(pendingImage)
+              : savedImage
+                ? `/api/images/${savedImage}?v=${imgVersion}`
+                : null;
+            return (
+              <div className="image-field">
+                <label>Image</label>
+                {previewSrc && (
+                  <img
+                    src={previewSrc}
+                    alt="Yarn"
+                    className="image-field-img"
+                  />
+                )}
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageSelect}
+                />
+              </div>
+            );
+          })()}
+
+          {/* save/cancel buttons */}
           <div className="form-actions">
             <button type="submit" className="btn-primary">
               {editId ? "Save Changes" : "Add to Stash"}
@@ -195,6 +243,13 @@ export default function Inventory() {
       {!showForm &&
         items.map((item) => (
           <div key={item.id} className="card yarn-card">
+            {item.image && (
+              <img
+                src={`/api/images/${item.image}?v=${imgVersion}`}
+                alt={`${item.brand} ${item.colorway}`}
+                className="yarn-card-thumb"
+              />
+            )}
             <div className="yarn-card-info">
               <h3>
                 {item.brand} {item.name} - {item.colorway}
@@ -202,6 +257,20 @@ export default function Inventory() {
               <p>
                 {item.amount} skeins - {item.yardage}
               </p>
+              {item.link && (
+                <p>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.link}
+                  </a>
+                </p>
+              )}
+              {item.discontinued && (
+                <p>
+                  <span style={{ color: "red", fontWeight: "bold" }}>
+                    Discontinued
+                  </span>
+                </p>
+              )}
             </div>
             <div className="yarn-card-actions">
               <button className="btn-secondary" onClick={() => startEdit(item)}>

@@ -15,7 +15,8 @@
     "knit_gauge_swatch": "18S/26R",
     "crochet_gauge_swatch": "13S/16R",
     "link": "https://www.lionbrand.com/products/re-make-yarn?variant=42778364837981",
-    "discontinued": false
+    "discontinued": false,
+    "image": "1a15ad2becba.jpg"
   },
   {
     "id": "f552a12c8127",
@@ -33,7 +34,8 @@
     "knit_gauge_swatch": "26S/37R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "9d0b0fc8ca4b",
@@ -51,7 +53,8 @@
     "knit_gauge_swatch": "26S/37R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "36c06aa63758",
@@ -69,7 +72,8 @@
     "knit_gauge_swatch": "26S/37R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "6b61c4e46730",
@@ -87,7 +91,8 @@
     "knit_gauge_swatch": "22S/32R or 24S/34R",
     "crochet_gauge_swatch": "22scS/26R",
     "link": "https://berroco.com/yarns/berroco-comfort-dk/",
-    "discontinued": false
+    "discontinued": false,
+    "image": "6b61c4e46730.jpg"
   },
   {
     "id": "ef17bc2b0b88",
@@ -105,7 +110,8 @@
     "knit_gauge_swatch": "22S/28R",
     "crochet_gauge_swatch": "20S/24R",
     "link": "https://www.woolandcompany.com/products/rico-design-baby-dream-dk-uni-002-powder",
-    "discontinued": false
+    "discontinued": false,
+    "image": "ef17bc2b0b88.jpg"
   },
   {
     "id": "e3cdcd0146d1",
@@ -123,7 +129,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "https://www.yarnspirations.com/products/lily-sugarn-cream-the-original-yarn?variant=47070369874235",
-    "discontinued": false
+    "discontinued": false,
+    "image": "e3cdcd0146d1.jpg"
   },
   {
     "id": "f2b42bee698e",
@@ -141,7 +148,8 @@
     "knit_gauge_swatch": "23-26sts",
     "crochet_gauge_swatch": "16-20sts",
     "link": "https://www.iconfiberarts.com/products/rainbow-cake-cotton-yarn-by-queensland?variant=40828230008855",
-    "discontinued": false
+    "discontinued": false,
+    "image": "f2b42bee698e.jpg"
   },
   {
     "id": "0de23da16ce7",
@@ -155,11 +163,12 @@
     "colorway": "1164.0003",
     "dye_lot": "5179",
     "recommended_needle": "4.5-5mm",
-    "recommended_hook": "",
+    "recommended_hook": "None",
     "knit_gauge_swatch": "19S/28R",
     "crochet_gauge_swatch": "",
     "link": "https://www.langyarns.com/en/Wool-Yarns/?yarnDetail=1164",
-    "discontinued": false
+    "discontinued": false,
+    "image": "0de23da16ce7.png"
   },
   {
     "id": "be87303aac2a",
@@ -177,7 +186,8 @@
     "knit_gauge_swatch": "16-20sts",
     "crochet_gauge_swatch": "11-14sts",
     "link": "https://queenslandcollectionyarn.com/yarn/E-COASCOTOM",
-    "discontinued": false
+    "discontinued": false,
+    "image": "be87303aac2a.jpg"
   },
   {
     "id": "17b67a62373f",
@@ -195,7 +205,8 @@
     "knit_gauge_swatch": "20sts/26R",
     "crochet_gauge_swatch": "16sc/20R",
     "link": "https://www.michaels.com/product/caron-cloud-cakes-perfect-phasing-yarn-10749893",
-    "discontinued": false
+    "discontinued": false,
+    "image": "17b67a62373f.jpg"
   },
   {
     "id": "c9850b32ff44",
@@ -213,7 +224,8 @@
     "knit_gauge_swatch": "12sts/15R",
     "crochet_gauge_swatch": "11sc/8R",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-eco-brights",
-    "discontinued": false
+    "discontinued": false,
+    "image": "c9850b32ff44.jpg"
   },
   {
     "id": "6c80bbe55d27",
@@ -231,7 +243,8 @@
     "knit_gauge_swatch": "16S/20R",
     "crochet_gauge_swatch": "14sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-creme-cotton",
-    "discontinued": true
+    "discontinued": true,
+    "image": "6c80bbe55d27.jpeg"
   },
   {
     "id": "c7e2957cf6e6",
@@ -249,7 +262,8 @@
     "knit_gauge_swatch": "16S/20R",
     "crochet_gauge_swatch": "14sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-creme-cotton",
-    "discontinued": true
+    "discontinued": true,
+    "image": "c7e2957cf6e6.jpg"
   },
   {
     "id": "83de78a2d4d1",
@@ -263,11 +277,12 @@
     "colorway": "Ginger",
     "dye_lot": "2",
     "recommended_needle": "10 (6mm), 15 (10mm), 17 (12mm)",
-    "recommended_hook": "",
+    "recommended_hook": "None",
     "knit_gauge_swatch": "13.5sts/19R , 9.5sts/14R , 9sts/11R",
     "crochet_gauge_swatch": "",
     "link": "https://loopymango.com/products/summer-100-g?variant=31588820156459",
-    "discontinued": false
+    "discontinued": false,
+    "image": "83de78a2d4d1.jpg"
   },
   {
     "id": "663d10d462fb",
@@ -285,7 +300,8 @@
     "knit_gauge_swatch": "14-16sts/20-23R",
     "crochet_gauge_swatch": "13scS/16R",
     "link": "https://berroco.com/yarns/berroco-wizard/",
-    "discontinued": false
+    "discontinued": false,
+    "image": "663d10d462fb.jpg"
   },
   {
     "id": "5333b60a1d65",
@@ -299,11 +315,12 @@
     "colorway": "1115. 0016",
     "dye_lot": "3807",
     "recommended_needle": "1.5-4 (2.5-3.5mm)",
-    "recommended_hook": "",
+    "recommended_hook": "None",
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "https://www.wooladdicts.com/de/Wolle-Garne/Tierische-Fasern/Schurwolle/?yarnDetail=1115",
-    "discontinued": false
+    "discontinued": false,
+    "image": "5333b60a1d65.png"
   },
   {
     "id": "a73566362295",
@@ -321,7 +338,8 @@
     "knit_gauge_swatch": "14S/18R",
     "crochet_gauge_swatch": "12S/14R",
     "link": "https://www.lionbrand.com/products/feels-like-a-dream-yarn?srsltid=AfmBOoqnfAq8hiExYVwHWG_7iW4_ZfOohXrkWyO8TNWmz2SBB1wq68LL",
-    "discontinued": false
+    "discontinued": false,
+    "image": "a73566362295.jpg"
   },
   {
     "id": "17a0bb8074f4",
@@ -339,7 +357,8 @@
     "knit_gauge_swatch": "15S/21R",
     "crochet_gauge_swatch": "13scS/18R",
     "link": "https://www.circuloyarns.com/natural-cotton-multicolor",
-    "discontinued": false
+    "discontinued": false,
+    "image": "17a0bb8074f4.jpg"
   },
   {
     "id": "1018e91a91b6",
@@ -357,7 +376,8 @@
     "knit_gauge_swatch": "18S/24R",
     "crochet_gauge_swatch": "18sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-impeccable-speckle",
-    "discontinued": true
+    "discontinued": true,
+    "image": "1018e91a91b6.jpeg"
   },
   {
     "id": "ec9413bcbbd6",
@@ -375,7 +395,8 @@
     "knit_gauge_swatch": "16S/20R",
     "crochet_gauge_swatch": "14sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-creme-cotton",
-    "discontinued": true
+    "discontinued": true,
+    "image": "ec9413bcbbd6.jpeg"
   },
   {
     "id": "cd1e5999186f",
@@ -393,7 +414,8 @@
     "knit_gauge_swatch": "23S/29R",
     "crochet_gauge_swatch": "18scS/20R",
     "link": "https://www.premieryarns.com/products/pcottonfr?variant=24360222662",
-    "discontinued": false
+    "discontinued": false,
+    "image": "cd1e5999186f.jpg"
   },
   {
     "id": "bf596f52cba1",
@@ -407,11 +429,12 @@
     "colorway": "37",
     "dye_lot": "356842",
     "recommended_needle": "2.5 (3mm) , 4 (3.5mm) , 6 (4mm)",
-    "recommended_hook": "",
+    "recommended_hook": "None",
     "knit_gauge_swatch": "22S, 20S, 18S",
     "crochet_gauge_swatch": "",
     "link": "https://isagerstrik.dk/en/product/boucle/",
-    "discontinued": false
+    "discontinued": false,
+    "image": "bf596f52cba1.jpg"
   },
   {
     "id": "dcd0dee4ad1e",
@@ -429,7 +452,8 @@
     "knit_gauge_swatch": "15S/22R",
     "crochet_gauge_swatch": "14scS/15R",
     "link": "https://www.ravelry.com/yarns/library/draper-james-cozy-wool",
-    "discontinued": true
+    "discontinued": true,
+    "image": "dcd0dee4ad1e.png"
   },
   {
     "id": "dc00838861df",
@@ -447,7 +471,8 @@
     "knit_gauge_swatch": "18S/24R",
     "crochet_gauge_swatch": "16-18sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-capri-eco-cotton",
-    "discontinued": true
+    "discontinued": true,
+    "image": "dc00838861df.jpg"
   },
   {
     "id": "500a30479303",
@@ -460,12 +485,13 @@
     "weight": "Lace (0)",
     "colorway": "484 - Myrtle Green",
     "dye_lot": "Machine Dyed",
-    "recommended_needle": "",
+    "recommended_needle": "None",
     "recommended_hook": "B (1.65-2.25mm)",
     "knit_gauge_swatch": "",
     "crochet_gauge_swatch": "33-40sts",
     "link": "https://www.yarnspirations.com/products/south-maid-crochet-thread-size-10?variant=50718420336955",
-    "discontinued": true
+    "discontinued": true,
+    "image": "500a30479303.jpg"
   },
   {
     "id": "8b9ad4fc4a10",
@@ -483,7 +509,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "https://www.yarnspirations.com/products/lily-sugarn-cream-the-original-yarn?variant=47070369874235",
-    "discontinued": false
+    "discontinued": false,
+    "image": "8b9ad4fc4a10.jpg"
   },
   {
     "id": "2d8561c9b774",
@@ -501,7 +528,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "https://www.yarnspirations.com/products/lily-sugarn-cream-the-original-yarn?variant=47070369874235",
-    "discontinued": false
+    "discontinued": false,
+    "image": "2d8561c9b774.jpg"
   },
   {
     "id": "cd398d682f31",
@@ -519,7 +547,8 @@
     "knit_gauge_swatch": "20S/27R",
     "crochet_gauge_swatch": "17scS/18R",
     "link": "https://herrschners.com/k-c-essential-cotton-yarn/",
-    "discontinued": true
+    "discontinued": true,
+    "image": "cd398d682f31.png"
   },
   {
     "id": "e72acb42cd0a",
@@ -537,7 +566,8 @@
     "knit_gauge_swatch": "18S/24R",
     "crochet_gauge_swatch": "16-18sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-capri-eco-cotton",
-    "discontinued": true
+    "discontinued": true,
+    "image": "e72acb42cd0a.jpg"
   },
   {
     "id": "21f3a068f132",
@@ -555,7 +585,8 @@
     "knit_gauge_swatch": "18S/24R",
     "crochet_gauge_swatch": "16-18sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-capri-eco-cotton",
-    "discontinued": true
+    "discontinued": true,
+    "image": "21f3a068f132.jpeg"
   },
   {
     "id": "3d74c07c8f13",
@@ -573,7 +604,8 @@
     "knit_gauge_swatch": "18S/24R",
     "crochet_gauge_swatch": "16-18sts",
     "link": "https://www.ravelry.com/yarns/library/loops--threads-capri-eco-cotton",
-    "discontinued": true
+    "discontinued": true,
+    "image": "3d74c07c8f13.jpg"
   },
   {
     "id": "e9550cb0c5a2",
@@ -591,7 +623,8 @@
     "knit_gauge_swatch": "17S/20R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "67d5842d4b74",
@@ -609,7 +642,8 @@
     "knit_gauge_swatch": "",
     "crochet_gauge_swatch": "7sts per 1/2inch",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "878434c5279b",
@@ -627,7 +661,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "58ad1ec954d7",
@@ -645,7 +680,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "d87392cc7d92",
@@ -663,7 +699,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "73ccad18596b",
@@ -681,7 +718,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "6278a8b23124",
@@ -699,7 +737,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "c8ba60c2f12e",
@@ -717,7 +756,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "f549d2ede187",
@@ -735,7 +775,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "06faab3a0304",
@@ -753,7 +794,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "18191f87a908",
@@ -771,7 +813,8 @@
     "knit_gauge_swatch": "18S/25R",
     "crochet_gauge_swatch": "13scS/16R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "af26e49d230e",
@@ -789,7 +832,8 @@
     "knit_gauge_swatch": "20S/26R",
     "crochet_gauge_swatch": "13scS/14R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "54ec5070d727",
@@ -807,7 +851,8 @@
     "knit_gauge_swatch": "22S/28R",
     "crochet_gauge_swatch": "20S/26R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "edf8275a4d1c",
@@ -825,7 +870,8 @@
     "knit_gauge_swatch": "20S/28R",
     "crochet_gauge_swatch": "14S/19R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "9b7a7a18f8d4",
@@ -843,7 +889,8 @@
     "knit_gauge_swatch": "20S/28R",
     "crochet_gauge_swatch": "14S/19R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "da70a7c648d0",
@@ -861,7 +908,8 @@
     "knit_gauge_swatch": "20S/28R",
     "crochet_gauge_swatch": "14S/19R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "abcc3af38d38",
@@ -879,7 +927,8 @@
     "knit_gauge_swatch": "20S/28R",
     "crochet_gauge_swatch": "14S/19R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "810245bc86d1",
@@ -897,7 +946,8 @@
     "knit_gauge_swatch": "20S/28R",
     "crochet_gauge_swatch": "14S/19R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "0728199ecd96",
@@ -915,7 +965,8 @@
     "knit_gauge_swatch": "20S/28R",
     "crochet_gauge_swatch": "14S/19R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "50eb2d9b33c6",
@@ -933,7 +984,8 @@
     "knit_gauge_swatch": "25S/34R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "d716b47cd712",
@@ -951,7 +1003,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "0c248ea8b413",
@@ -969,7 +1022,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "f51b5deab8e1",
@@ -987,7 +1041,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "7382727aadad",
@@ -1005,7 +1060,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "ca644e67bf9f",
@@ -1023,7 +1079,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "8a47d5b36b1f",
@@ -1041,7 +1098,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "cb11084e5246",
@@ -1059,7 +1117,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "523f2bc86ce0",
@@ -1077,7 +1136,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "63628ee713fb",
@@ -1095,7 +1155,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "4721521e6aa3",
@@ -1113,7 +1174,8 @@
     "knit_gauge_swatch": "30S/41R",
     "crochet_gauge_swatch": "",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "813afc8895c7",
@@ -1131,7 +1193,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "160f83fe2075",
@@ -1149,7 +1212,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "4aec9d646fe2",
@@ -1167,7 +1231,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "b7084b08f389",
@@ -1185,7 +1250,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "964f56ff1eb4",
@@ -1203,7 +1269,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "674b86f1768a",
@@ -1221,7 +1288,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "f6589df06e82",
@@ -1239,7 +1307,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "b679e643173f",
@@ -1257,7 +1326,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "935dd5fbddaa",
@@ -1275,7 +1345,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "c86452f69a78",
@@ -1293,7 +1364,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "dbadcd3df96b",
@@ -1311,7 +1383,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "17e670b3b21c",
@@ -1329,7 +1402,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "cb92dad5915d",
@@ -1347,7 +1421,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "c50261f5573b",
@@ -1365,7 +1440,8 @@
     "knit_gauge_swatch": "27S/38R",
     "crochet_gauge_swatch": "19S/24R",
     "link": "",
-    "discontinued": false
+    "discontinued": false,
+    "image": ""
   },
   {
     "id": "e6108f067d66",
@@ -1383,7 +1459,8 @@
     "knit_gauge_swatch": "15S/20R",
     "crochet_gauge_swatch": "12scS/14R",
     "link": "https://www.ravelry.com/yarns/library/caron-x-pantone",
-    "discontinued": true
+    "discontinued": true,
+    "image": "e6108f067d66.jpeg"
   },
   {
     "id": "89d5716a02df",
@@ -1401,6 +1478,7 @@
     "knit_gauge_swatch": "15S/20R",
     "crochet_gauge_swatch": "12scS/14R",
     "link": "https://www.ravelry.com/yarns/library/caron-x-pantone",
-    "discontinued": true
+    "discontinued": true,
+    "image": "89d5716a02df.jpg"
   }
 ]

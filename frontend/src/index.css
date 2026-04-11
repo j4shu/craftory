@@ -111,6 +111,14 @@ select {
   background: #fff;
 }
 
+input[type="file"] {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #c0bdb6;
@@ -165,6 +173,17 @@ label {
   margin-bottom: 0.75rem;
 }
 
+/* Image field in edit form */
+.image-field {
+  margin-top: 0.75rem;
+}
+
+.image-field-img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 6px;
+}
+
 /* ===== Cards ===== */
 
 .card {
@@ -179,6 +198,19 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.yarn-card-thumb {
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.yarn-card-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .yarn-card-info h3 {

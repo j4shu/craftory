@@ -12,7 +12,7 @@ load_dotenv()
 
 import anthropic
 import uvicorn
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.responses import StreamingResponse
@@ -23,8 +23,11 @@ from pydantic import BaseModel, Field
 # ---------------------------------------------------------------------------
 
 DATA_FILE = Path(__file__).parent / "data" / "inventory.json"
+IMAGES_DIR = Path(__file__).parent / "data" / "images"
 CONVERSATIONS_DIR = Path(__file__).parent / "conversations"
 FRONTEND_DIR = Path(__file__).parent / "frontend" / "dist"
+
+ALLOWED_IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 
 # ---------------------------------------------------------------------------
 # Shared clients
@@ -53,6 +56,7 @@ class YarnItem(BaseModel):
     knit_gauge_swatch: str = ""  # e.g. "20 sts x 26 rows = 4in on US 7"
     crochet_gauge_swatch: str = ""
     link: str = ""
+    image: str = ""  # filename, e.g. "a3f8b2c91d04.png"
     discontinued: bool = False
 
 
@@ -147,8 +151,45 @@ def delete_item(item_id: str):
     new_items = [i for i in items if i["id"] != item_id]
     if len(new_items) == len(items):
         raise HTTPException(404, "Item not found")
+    # Also delete the image file if one exists
+    deleted_item = next(i for i in items if i["id"] == item_id)
+    if deleted_item.get("image"):
+        image_path = IMAGES_DIR / deleted_item["image"]
+        image_path.unlink(missing_ok=True)
     write_inventory(new_items)
     return {"deleted": item_id}
+
+
+# ---- Image upload/delete ---------------------------------------------------
+
+IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+app.mount("/api/images", StaticFiles(directory=IMAGES_DIR), name="images")
+
+
+@app.post("/api/inventory/{item_id}/image", status_code=201)
+async def upload_image(item_id: str, file: UploadFile):
+    items = read_inventory()
+    item = next((i for i in items if i["id"] == item_id), None)
+    if not item:
+        raise HTTPException(404, "Item not found")
+
+    ext = Path(file.filename).suffix.lower()
+    if ext not in ALLOWED_IMAGE_EXTENSIONS:
+        raise HTTPException(400, f"Unsupported image type: {ext}")
+
+    # Remove old image if replacing
+    if item.get("image"):
+        old_path = IMAGES_DIR / item["image"]
+        old_path.unlink(missing_ok=True)
+
+    filename = f"{item_id}{ext}"
+    dest = IMAGES_DIR / filename
+    dest.write_bytes(await file.read())
+
+    item["image"] = filename
+    write_inventory(items)
+    return {"image": filename}
+
 
 
 # ---- Claude Chat ----------------------------------------------------------
